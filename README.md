@@ -73,7 +73,8 @@ fuwa-fuwa-admin/
 ├── README.md                 # Project documentation  
 </pre>
 
-
+## Website Preview
+https://chinodml.github.io/asset-management/
 
 ## Notes
 
