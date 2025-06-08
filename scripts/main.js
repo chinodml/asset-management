@@ -5,24 +5,37 @@ import { renderSidebar } from "./components/sidebar.js";
 import { renderTopbar, updateTopbar } from "./components/topbar.js";
 import { routeTo } from "./router.js";
 
-window.initApp = function () {
-  const main = document.getElementById("main-content");
-
-  onAuthStateChanged(auth, (user) => {
-    if (user) {
-      renderSidebar(handleMenuClick);
-      renderTopbar("Dashboard");
-      routeTo("Dashboard");
-    } else {
-      main.innerHTML = ""; // Clear loading message
-      renderLogin(main);
-    }
-  });
-};
+const appContainer = document.getElementById("app-container");
+const authContainer = document.getElementById("auth-container");
+const authContent = document.getElementById("auth-content");
 
 function handleMenuClick(page) {
   updateTopbar(page);
   routeTo(page);
 }
+
+function showApp() {
+  appContainer.classList.remove("hidden");
+  authContainer.classList.add("hidden");
+}
+
+function showAuth() {
+  appContainer.classList.add("hidden");
+  authContainer.classList.remove("hidden");
+}
+
+window.initApp = function () {
+  onAuthStateChanged(auth, (user) => {
+    if (user) {
+      showApp();
+      renderSidebar(handleMenuClick);
+      renderTopbar("Dashboard");
+      routeTo("Dashboard");
+    } else {
+      showAuth();
+      renderLogin(authContent);
+    }
+  });
+};
 
 initApp();
