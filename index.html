@@ -35,9 +35,19 @@
   </div>
 
   <!-- Container for login/add user -->
-  <div id="auth-container" class="fixed inset-0 overflow-y-auto bg-[#fdf6f0] hidden">
-    <div id="auth-content" class="flex min-h-screen items-center justify-center px-4 py-8"></div>
+  <div id="auth-container" class="fixed inset-0 overflow-y-auto relative hidden">
+    <!-- Background image with blur and fade -->
+    <div class="absolute inset-0 bg-cover bg-center bg-no-repeat z-0 blur-sm opacity-80" style="background-image: url('asset/fuwafuwa-bg.png');"></div>
+  
+    <!-- Optional: overlay to make it softer -->
+    <div class="absolute inset-0 bg-white/40 z-0 backdrop-blur-sm"></div>
+  
+    <!-- Content container on top -->
+    <div id="auth-content" class="relative z-10 flex min-h-screen items-center justify-center px-4 py-8">
+      <!-- Your login/signup form gets rendered here -->
+    </div>
   </div>
+  
   
 
   <script type="module" src="scripts/main.js"></script>
