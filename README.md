@@ -4,7 +4,7 @@ This is a simple web-based admin panel created as a final project for our Electi
 
 ## Overview
 
-The **Fuwa Fuwa Admin Panel** is designed for managing basic admin tasks in a hypothetical bread manufacturing company. It features a clean, responsive interface built using **HTML**, **JavaScript**, and **Tailwind CSS**.
+The **Fuwa Fuwa Admin Panel** is designed for managing basic admin tasks in a bread manufacturing company. It features a clean, responsive interface built using **HTML**, **JavaScript**, and **Tailwind CSS**.
 
 The goal of the project was to create a minimal but functional system with user authentication and a basic dashboard structure.
 
