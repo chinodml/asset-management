@@ -7,7 +7,7 @@ export function renderLogin(container) {
   container.innerHTML = `
 
     
-<div class="w-full max-w-md bg-white p-8 rounded-2xl shadow-lg border border-orange-200">
+<div class="w-full max-w-md bg-white p-8 rounded-2xl shadow-lg border ">
   <h2 class="text-3xl font-semibold text-center text-orange-900 mb-6">Welcome Back</h2>
   <form id="login-form" class="space-y-4">
     <input type="email" id="username" placeholder="Email" class="w-full px-4 py-2 border border-orange-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500" required />
