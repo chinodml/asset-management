@@ -5,10 +5,14 @@ fuwa-fuwa-admin/
 ├── scripts/
 │   ├── main.js
 │   ├── router.js
+│   ├── firebase.js
 │   └── components/
 │       ├── sidebar.js
 │       └── topbar.js
-└── pages/
+├── pages/
 │   ├── dashboard.js
-│   └── users.js
-└── dir-structure.txt
+│   └── login.js
+├── backend/
+├── dir-structure.txt
+└── README.md
+
