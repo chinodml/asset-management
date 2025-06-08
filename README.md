@@ -51,7 +51,27 @@ The **Fuwa Fuwa Admin Panel** is a front-end web application that provides a fou
 ---
 
 ## Folder Structure Overview
-<pre> fuwa-fuwa-admin/ ├── index.html # Root HTML file ├── styles/ # Custom CSS (Tailwind extensions) │ └── custom.css ├── scripts/ # JavaScript logic │ ├── firebase.js # Firebase config │ ├── main.js # App initialization & auth state management │ ├── router.js # Page routing │ └── components/ # Reusable UI components │ ├── sidebar.js # Sidebar navigation │ └── topbar.js # Topbar layout ├── pages/ # Page-specific logic and views │ ├── login.js # Login page │ ├── addUser.js # Sign-up page │ └── dashboard.js # Dashboard page ├── images/ # Static image assets (logo, background, etc.) │ ├── fuwafuwa-logo.png │ └── fuwafuwa-bg.png ├── README.md # Project documentation </pre>
+<pre> 
+fuwa-fuwa-admin/
+├── index.html                # Root HTML file
+├── styles/                   # Custom CSS (Tailwind extensions)
+│   └── custom.css
+├── scripts/                  # JavaScript logic
+│   ├── firebase.js           # Firebase config
+│   ├── main.js               # App initialization & auth state management
+│   ├── router.js             # Page routing
+│   └── components/           # Reusable UI components
+│       ├── sidebar.js        # Sidebar navigation
+│       └── topbar.js         # Topbar layout
+├── pages/                    # Page-specific logic and views
+│   ├── login.js              # Login page
+│   ├── addUser.js            # Sign-up page
+│   └── dashboard.js          # Dashboard page
+├── images/                   # Static image assets (logo, backgrounds, etc.)
+│   └── fuwafuwa-logo.png     # Logo example
+│   └── fuwafuwa-bg.png       # Background image
+├── README.md                 # Project documentation  
+</pre>
 
 
 
