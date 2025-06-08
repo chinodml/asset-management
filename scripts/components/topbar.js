@@ -16,7 +16,7 @@ export function renderTopbar(initialTitle) {
 
   topbarEl.innerHTML = `
     <div id="topbar-title">${initialTitle}</div>
-    <button id="logout-btn" class="text-sm text-white bg-[#e05d00] hover:bg-[#c44f00] px-3 py-1 rounded-md transition">
+    <button id="logout-btn" class="text-sm text-white bg-[#d88c6f] hover:bg-[#b46f56] px-3 py-1 rounded-md transition">
       Logout
     </button>
   `;

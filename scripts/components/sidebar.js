@@ -1,12 +1,14 @@
 export function renderSidebar(onClick) {
   const container = document.getElementById("sidebar-container");
-  container.className = "w-64 bg-orange-50 border-r  shadow-md";
+  container.className = "w-72 bg-orange-50 border-r  shadow-md";
 
   container.innerHTML = `
-    <div class="p-5 text-xl font-bold text-orange-900 tracking-wide ">
-      Fuwa Fuwa Admin
-    </div>
-    <nav id="sidebar" class="space-y-1 p-4 "></nav>
+    <div class="flex items-center justify-start gap-3 px-5 py-4 text-lg font-bold text-orange-900 tracking-wide">
+    <img src="asset/fuwafuwa-logo.png" alt="Fuwa Fuwa Logo" class="w-12 h-12" />
+    <span>Administrator's Panel</span>
+  </div>
+  <nav id="sidebar" class="space-y-1 p-4"></nav>
+
   `;
 
   const menuItems = [
