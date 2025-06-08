@@ -11,11 +11,11 @@ export function renderAddUser(container) {
 <div class="w-full max-w-md bg-white p-8 rounded-2xl shadow-lg border ">
   <h2 class="text-3xl font-semibold text-center text-orange-900 mb-6">Create Account</h2>
   <form id="signup-form" class="space-y-4">
-    <input type="text" id="name" placeholder="Full Name" class="w-full px-4 py-2 border border-orange-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500" required />
-    <input type="email" id="email" placeholder="Email" class="w-full px-4 py-2 border border-orange-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500" required />
-    <input type="password" id="password" placeholder="Password" class="w-full px-4 py-2 border border-orange-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500" required />
-    <input type="password" id="confirm-password" placeholder="Confirm Password" class="w-full px-4 py-2 border border-orange-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500" required />
-    <button type="submit" class="w-full bg-orange-500 text-white py-2 rounded-md hover:bg-orange-600 transition">Sign Up</button>
+    <input type="text" id="name" placeholder="Full Name" class="w-full px-4 py-2 border border-[#e05d00] rounded-md focus:outline-none focus:ring-2 focus:ring-[#c44f00]" required />
+    <input type="email" id="email" placeholder="Email" class="w-full px-4 py-2 border border-[#e05d00] rounded-md focus:outline-none focus:ring-2 focus:ring-[#c44f00]" required />
+    <input type="password" id="password" placeholder="Password" class="w-full px-4 py-2 border border-[#e05d00] rounded-md focus:outline-none focus:ring-2 focus:ring-[#c44f00]" required />
+    <input type="password" id="confirm-password" placeholder="Confirm Password" class="w-full px-4 py-2 border border-[#e05d00] rounded-md focus:outline-none focus:ring-2 focus:ring-[#c44f00]" required />
+    <button type="submit" class="w-full bg-[#e05d00] text-white py-2 rounded-md hover:bg-[#c44f00] transition">Sign Up</button>
   </form>
   <p class="text-sm text-center text-gray-600 mt-4">
     Already have an account? <a id="back-to-login-btn" href="#" class="text-orange-600 hover:underline">Login</a>
@@ -23,8 +23,11 @@ export function renderAddUser(container) {
 </div>
     
 
+
     
   `;
+
+
 
   const form = container.querySelector("#signup-form");
   form.onsubmit = async (e) => {

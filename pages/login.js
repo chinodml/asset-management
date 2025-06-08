@@ -10,9 +10,9 @@ export function renderLogin(container) {
 <div class="w-full max-w-md bg-white p-8 rounded-2xl shadow-lg border ">
   <h2 class="text-3xl font-semibold text-center text-orange-900 mb-6">Welcome Back</h2>
   <form id="login-form" class="space-y-4">
-    <input type="email" id="username" placeholder="Email" class="w-full px-4 py-2 border border-orange-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500" required />
-    <input type="password" id="password" placeholder="Password" class="w-full px-4 py-2 border border-orange-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500" required />
-    <button type="submit" class="w-full bg-orange-500 text-white py-2 rounded-md hover:bg-orange-600 transition">Login</button>
+    <input type="email" id="username" placeholder="Email" class="w-full px-4 py-2 border border-[#e05d00] rounded-md focus:outline-none focus:ring-2 focus:ring-[#c44f00]" required />
+    <input type="password" id="password" placeholder="Password" class="w-full px-4 py-2 border border-[#e05d00] rounded-md focus:outline-none focus:ring-2 focus:ring-[#c44f00]" required />
+    <button type="submit" class="w-full bg-[#e05d00] text-white py-2 rounded-md hover:bg-[#c44f00] transition">Login</button>
   </form>
   <p class="text-sm text-center text-gray-600 mt-4">
     Don’t have an account? <a id="add-user-btn" href="#" class="text-orange-600 hover:underline">Sign up</a>
@@ -21,6 +21,8 @@ export function renderLogin(container) {
 
     
   `;
+
+    // bg-[#e05d00] hover:bg-[#c44f00]
 
   // Login form submit
   const form = container.querySelector("#login-form");

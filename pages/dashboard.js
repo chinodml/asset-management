@@ -2,9 +2,7 @@
 
 export function renderDashboard(container) {
   container.innerHTML = `
-    <h2 class="text-2xl font-semibold text-gray-800 mb-6 tracking-wide">
-      Dashboard
-    </h2>
+
 
     <!-- Top stat cards -->
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
