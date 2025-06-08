@@ -73,10 +73,6 @@ fuwa-fuwa-admin/
 
 
 
-## Website Previeew 
-https://tall-paint-eclipse.glitch.me/
-
-
 ## Notes
 
 This is a frontend-focused mock application. It does not include backend validation, role management, or real asset tracking — just enough for demonstrating login, routing, and UI layout as part of our final submission.
