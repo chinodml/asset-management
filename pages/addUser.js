@@ -5,51 +5,60 @@ import { renderLogin } from "./login.js";
 
 export function renderAddUser(container) {
   container.innerHTML = `
-    <div class="min-h-screen flex items-center justify-center bg-gray-50">
-      <div class="bg-white shadow-lg rounded-lg p-8 w-full max-w-sm border">
-        <h2 class="text-2xl font-bold text-gray-800 mb-6">Add New User</h2>
-        <form id="add-user-form" class="space-y-4">
-          <input type="text" id="name" placeholder="Full Name" required class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-orange-300" />
-          <input type="email" id="email" placeholder="Email" required class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-orange-300" />
-          <input type="password" id="password" placeholder="Password" required class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-orange-300" />
-          <button type="submit" class="w-full bg-[#e63946] hover:bg-[#d62828] text-white py-2 rounded-md">Add User</button>
-        </form>
-        <button id="back-to-login-btn" class="mt-4 w-full text-center text-[#e63946] hover:underline">
-          Back to Login
-        </button>
-      </div>
-    </div>
+
+
+    
+<div class="w-full max-w-md bg-white p-8 rounded-2xl shadow-lg border border-orange-200">
+  <h2 class="text-3xl font-semibold text-center text-orange-900 mb-6">Create Account</h2>
+  <form id="signup-form" class="space-y-4">
+    <input type="text" id="name" placeholder="Full Name" class="w-full px-4 py-2 border border-orange-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500" required />
+    <input type="email" id="email" placeholder="Email" class="w-full px-4 py-2 border border-orange-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500" required />
+    <input type="password" id="password" placeholder="Password" class="w-full px-4 py-2 border border-orange-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500" required />
+    <input type="password" id="confirm-password" placeholder="Confirm Password" class="w-full px-4 py-2 border border-orange-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500" required />
+    <button type="submit" class="w-full bg-orange-500 text-white py-2 rounded-md hover:bg-orange-600 transition">Sign Up</button>
+  </form>
+  <p class="text-sm text-center text-gray-600 mt-4">
+    Already have an account? <a id="back-to-login-btn" href="#" class="text-orange-600 hover:underline">Login</a>
+  </p>
+</div>
+    
+
+    
   `;
 
-  const form = container.querySelector("#add-user-form");
+  const form = container.querySelector("#signup-form");
   form.onsubmit = async (e) => {
     e.preventDefault();
-
+  
     const name = form.name.value.trim();
     const email = form.email.value.trim();
     const password = form.password.value.trim();
-
+    const confirmPassword = form["confirm-password"].value.trim();
+  
+    if (password !== confirmPassword) {
+      alert("Passwords do not match.");
+      return;
+    }
+  
     try {
-      // Create user
       const userCredential = await createUserWithEmailAndPassword(auth, email, password);
-
-      // Add to Firestore
+  
       await addDoc(collection(db, "users"), {
         uid: userCredential.user.uid,
         name,
         email,
         createdAt: new Date()
       });
-
-      // Sign out so user must log in manually
+  
       await signOut(auth);
-
+  
       alert("User added successfully! Please log in.");
       renderLogin(container);
     } catch (error) {
       alert("Error adding user: " + error.message);
     }
   };
+  
 
   container.querySelector("#back-to-login-btn").onclick = () => {
     renderLogin(container);
