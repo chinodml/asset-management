@@ -52,22 +52,25 @@ The **Fuwa Fuwa Admin Panel** is a front-end web application that provides a fou
 
 ## Folder Structure Overview
 fuwa-fuwa-admin/
-├── index.html # Root HTML
-├── styles/ # Custom CSS (Tailwind extensions)
-│ └── custom.css
-├── scripts/ # JavaScript logic
-│ ├── firebase.js # Firebase config
-│ ├── main.js # Auth state + init
-│ ├── router.js # Page routing
-│ └── components/
-│ ├── sidebar.js # Sidebar navigation
-│ └── topbar.js # Topbar layout
-├── pages/ # Auth and page views
-│ ├── login.js
-│ ├── addUser.js
-│ └── dashboard.js
-├── images/ # Assets like logo and background
-├── README.md
+├── index.html                # Root HTML file
+├── styles/                   # Custom CSS (Tailwind extensions)
+│   └── custom.css
+├── scripts/                  # JavaScript logic
+│   ├── firebase.js           # Firebase config
+│   ├── main.js               # App initialization & auth state management
+│   ├── router.js             # Page routing
+│   └── components/           # Reusable UI components
+│       ├── sidebar.js        # Sidebar navigation
+│       └── topbar.js         # Topbar layout
+├── pages/                    # Page-specific logic and views
+│   ├── login.js              # Login page
+│   ├── addUser.js            # Sign-up page
+│   └── dashboard.js          # Dashboard page
+├── images/                   # Static image assets (logo, backgrounds, etc.)
+│   └── fuwafuwa-logo.png     # Logo example
+│   └── fuwafuwa-bg.png       # Background image
+├── README.md                 # Project documentation
+
 
 
 ## Website Previeew 
