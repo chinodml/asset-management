@@ -1,0 +1,14 @@
+fuwa-fuwa-admin/
+├── index.html
+├── styles/
+│   └── custom.css
+├── scripts/
+│   ├── main.js
+│   ├── router.js
+│   └── components/
+│       ├── sidebar.js
+│       └── topbar.js
+└── pages/
+│   ├── dashboard.js
+│   └── users.js
+└── dir-structure.txt
