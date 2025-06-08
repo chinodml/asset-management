@@ -71,6 +71,6 @@ fuwa-fuwa-admin/
 ├── README.md
 
 
-## Website Preview
+## Website Previeew 
 https://tall-paint-eclipse.glitch.me/
 
