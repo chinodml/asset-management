@@ -1,5 +1,4 @@
 # Fuwa Fuwa Admin Panel
-
 This project is a web-based administrative dashboard created as our final project for the **Elective course**. The panel simulates the internal system of a **bread manufacturing company**, allowing administrators to log in, manage data, and navigate through a static but structured interface.
 
 ---
@@ -73,4 +72,12 @@ fuwa-fuwa-admin/
 
 ## Website Previeew 
 https://tall-paint-eclipse.glitch.me/
+
+
+## Notes
+
+This is a frontend-focused mock application. It does not include backend validation, role management, or real asset tracking — just enough for demonstrating login, routing, and UI layout as part of our final submission.
+
+---
+
 
