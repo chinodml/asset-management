@@ -8,7 +8,7 @@ export function renderAddUser(container) {
 
 
     
-<div class="w-full max-w-md bg-white p-8 rounded-2xl shadow-lg border border-orange-200">
+<div class="w-full max-w-md bg-white p-8 rounded-2xl shadow-lg border ">
   <h2 class="text-3xl font-semibold text-center text-orange-900 mb-6">Create Account</h2>
   <form id="signup-form" class="space-y-4">
     <input type="text" id="name" placeholder="Full Name" class="w-full px-4 py-2 border border-orange-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500" required />
