@@ -11,14 +11,14 @@ export function renderAddUser(container) {
 <div class="w-full max-w-md bg-white p-8 rounded-2xl shadow-lg border ">
   <h2 class="text-3xl font-semibold text-center text-orange-900 mb-6">Create Account</h2>
   <form id="signup-form" class="space-y-4">
-    <input type="text" id="name" placeholder="Full Name" class="w-full px-4 py-2 border border-[#e05d00] rounded-md focus:outline-none focus:ring-2 focus:ring-[#c44f00]" required />
-    <input type="email" id="email" placeholder="Email" class="w-full px-4 py-2 border border-[#e05d00] rounded-md focus:outline-none focus:ring-2 focus:ring-[#c44f00]" required />
-    <input type="password" id="password" placeholder="Password" class="w-full px-4 py-2 border border-[#e05d00] rounded-md focus:outline-none focus:ring-2 focus:ring-[#c44f00]" required />
-    <input type="password" id="confirm-password" placeholder="Confirm Password" class="w-full px-4 py-2 border border-[#e05d00] rounded-md focus:outline-none focus:ring-2 focus:ring-[#c44f00]" required />
-    <button type="submit" class="w-full bg-[#e05d00] text-white py-2 rounded-md hover:bg-[#c44f00] transition">Sign Up</button>
+    <input type="text" id="name" placeholder="Full Name" class="w-full px-4 py-2 border border-[#d88c6f] rounded-md focus:outline-none focus:ring-2 focus:ring-[#b46f56]" required />
+    <input type="email" id="email" placeholder="Email" class="w-full px-4 py-2 border border-[#d88c6f] rounded-md focus:outline-none focus:ring-2 focus:ring-[#b46f56]" required />
+    <input type="password" id="password" placeholder="Password" class="w-full px-4 py-2 border border-[#d88c6f] rounded-md focus:outline-none focus:ring-2 focus:ring-[#b46f56]" required />
+    <input type="password" id="confirm-password" placeholder="Confirm Password" class="w-full px-4 py-2 border border-[#d88c6f] rounded-md focus:outline-none focus:ring-2 focus:ring-[#b46f56]" required />
+    <button type="submit" class="w-full bg-[#d88c6f] text-white py-2 rounded-md hover:bg-[#b46f56] transition">Sign Up</button>
   </form>
   <p class="text-sm text-center text-gray-600 mt-4">
-    Already have an account? <a id="back-to-login-btn" href="#" class="text-orange-600 hover:underline">Login</a>
+    Already have an account? <a id="back-to-login-btn" href="#" class="text-[#b46f56] hover:underline">Login</a>
   </p>
 </div>
     
