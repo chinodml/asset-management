@@ -1,18 +1,18 @@
-fuwa-fuwa-admin/
-├── index.html
-├── styles/
-│   └── custom.css
-├── scripts/
-│   ├── main.js
-│   ├── router.js
-│   ├── firebase.js
-│   └── components/
-│       ├── sidebar.js
-│       └── topbar.js
+ASSET-MANAGEMENT/
+├── backend/                     # Backend logic (contents unknown)
 ├── pages/
-│   ├── dashboard.js
-│   └── login.js
-├── backend/
+│   ├── addUser.js              # New page (presumably for user creation)
+│   ├── dashboard.js            # Main admin dashboard
+│   └── login.js                # Login page
+├── scripts/
+│   ├── components/
+│   │   ├── sidebar.js
+│   │   └── topbar.js
+│   ├── firebase.js
+│   ├── main.js
+│   └── router.js
+├── styles/
+│   └── custom.css              # Tailwind overrides or custom styling
 ├── dir-structure.txt
+├── index.html
 └── README.md
-
